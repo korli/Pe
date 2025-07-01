@@ -6,7 +6,6 @@ SubDirHdrs $(TOP) Sources ;
 if $(OSPLAT) = X86 {
 	C++FLAGS += -include [ FDirName $(TOP) Languages Sources LanguageIncludes.h ] ;
 	C++FLAGS += -Wall -Wno-multichar -Wno-ctor-dtor-privacy ;
-}
 } else {
 	C++FLAGS += -prefix LanguageIncludes.h -w nounusedvar ;
 }
