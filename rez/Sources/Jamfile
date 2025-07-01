@@ -4,7 +4,7 @@ SubDir TOP rez Sources ;
 # SubDirHdrs $(OBJECTS_DIR) Sources ;
 
 if $(OSPLAT) = X86 {
-	C++FLAGS += -Wno-uninitialized -Wno-unused ;
+	C++FLAGS += -Wall -Wno-multichar -Wno-ctor-dtor-privacy ;
 }
 
 # <pe-src>
