@@ -4,7 +4,7 @@ SubDir TOP Sources ;
 SubDirHdrs $(OBJECTS_DIR) Sources ;
 
 if $(OSPLAT) = X86 {
-	C++FLAGS += -Wno-sign-compare -Wno-overloaded-virtual ;
+	C++FLAGS += -Wall -Wno-multichar -Wno-ctor-dtor-privacy ;
 } else {
 	# generate precompiled pe-headers on PPC:
 	Depends libhekkel.so : $(PREFIX_FILE) ;
