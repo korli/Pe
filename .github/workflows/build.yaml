@@ -29,4 +29,4 @@ jobs:
           run: |
             ssh user@localhost "pkgman install -y haiku_devel devel:libpcre" &&
             ssh user@localhost "pkgman update -y cmd:bison cmd:flex cmd:jam cmd:gcc" &&
-            jam -q
+            jam -q -dx
