@@ -2,9 +2,12 @@ SubDir TOP Extensions ;
 
 SubDirHdrs $(TOP) Sources ;
 
+if $(OSPLAT) = X86 {
+	C++FLAGS += -Wall -Wno-multichar -Wno-ctor-dtor-privacy ;
+}
+
 SubDirSysHdrs /boot/home/config/include ;
-SubDirSysHdrs /boot/common/include ;
-LINKFLAGS += -L/boot/home/config/lib -L/boot/common/lib ;
+LINKFLAGS += -L/boot/home/config/lib ;
 
 # <pe-src>
 PeExtension PrefixLines 
