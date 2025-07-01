@@ -41,9 +41,8 @@ MakeLocate libhekkel.so : $(DISTRO_DIR)/lib ;
 DEFINES = $(SAVED_DEFINES) ;
 
 SubDirSysHdrs /boot/home/config/include ;
-SubDirSysHdrs /boot/common/include ;
 SubDirSysHdrs /boot/system/develop/headers/private/tracker ;
-LINKFLAGS += -L/boot/home/config/lib -L/boot/common/lib ;
+LINKFLAGS += -L/boot/home/config/lib ;
 
 #<pe-src>
 Application Pe :
